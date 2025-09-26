@@ -25,7 +25,7 @@ const menu = [
     label: "Public",
     children: [
       { label: "About", href: "/about" },
-      { label: "Features", href: "/features" },
+      { label: "Features", href: "/features_public" },
       { label: "Pricing", href: "/pricing" },
       { label: "Events", href: "/events" },
       { label: "Blog", href: "/blog" },
