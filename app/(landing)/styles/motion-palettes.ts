@@ -1,0 +1,38 @@
+export const palettes = {
+  lightVibrant: {
+    background: "#ffffff",
+    surface: "#f4f6f8",
+    primary: "#2563eb",
+    secondary: "#e91c4c",
+    textPrimary: "#1f2937",
+    textSecondary: "#4b5563",
+    divider: "#e5e7eb",
+  },
+  lightWarm: {
+    background: "#fffbf9",
+    surface: "#fff5f0",
+    primary: "#f97316",
+    secondary: "#10b981",
+    textPrimary: "#333333",
+    textSecondary: "#6b7280",
+    divider: "#ede2d9",
+  },
+  lightModern: {
+    background: "#fafafa",
+    surface: "#ffffff",
+    primary: "#7c3aed",
+    secondary: "#22d3ee",
+    textPrimary: "#111827",
+    textSecondary: "#475569",
+    divider: "#d1d5db",
+  },
+  dark: {
+    background: "#121212",
+    surface: "#1e1e1e",
+    primary: "#cc8cfc",
+    secondary: "#cda631",
+    textPrimary: "#e5e7eb",
+    textSecondary: "#9ca3af",
+    divider: "#2c2c2c",
+  },
+};
