@@ -1,3 +1,4 @@
+import Cta from "./Cta"
 export default function Hero() {
   return (
     <section className="relative h-screen w-full">
@@ -16,14 +17,7 @@ export default function Hero() {
         <p className="text-lg md:text-2xl mb-6 text-light-vibrant-secondary">
           Join DVeb Motion™ and reach your fitness goals faster.
         </p>
-        <div className="space-x-4">
-          <button className="btn-light-vibrant-primary px-6 py-3 rounded">
-            Join as Free User
-          </button>
-          <button className="btn-light-vibrant-secondary px-6 py-3 rounded">
-            Upgrade to Premium
-          </button>
-        </div>
+        <Cta/>
       </div>
     </section>
   );

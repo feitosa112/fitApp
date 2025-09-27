@@ -35,7 +35,9 @@ export default function Trust() {
               key={index}
               className="bg-[var(--background)] border border-[var(--divider)] rounded-2xl shadow-md p-6"
             >
-              <p className="text-[var(--text-secondary)] italic mb-4">"{t.text}"</p>
+              <p className="text-[var(--text-secondary)] italic mb-4">
+                &quot;{t.text}&quot;
+              </p>
               <h3 className="text-[var(--text-primary)] font-semibold">{t.name}</h3>
             </div>
           ))}

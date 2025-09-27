@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 
 export default function Header() {
@@ -11,20 +12,21 @@ export default function Header() {
 
         {/* Navigacija */}
         <nav className="hidden md:flex space-x-6 text-light-vibrant-secondary">
-          <Link href="#about">About</Link>
-          <Link href="#features">Features</Link>
-          <Link href="/public/pricing">Pricing</Link>
-          <Link href="#events">Events</Link>
-          <Link href="#contact">Contact</Link>
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/features_public">Features</Link>
+          <Link href="/pricing">Pricing</Link>
+          <Link href="/events">Events</Link>
+          <Link href="/contact">Contact</Link>
           <Link href="/auth/login" className="font-semibold text-light-vibrant-primary">
             Login/Register
           </Link>
         </nav>
 
         {/* CTA dugme */}
-        <button className="btn-light-vibrant-primary ml-4 hidden md:inline-block">
-          Start Training Now
-        </button>
+        <button className="px-6 py-3 bg-blue-600 text-white rounded-md font-semibold hover:opacity-90 transition">
+  Start Training Now
+</button>
 
         {/* Mobile menu icon (samo za buduću implementaciju) */}
         <div className="md:hidden">
