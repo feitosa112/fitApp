@@ -19,7 +19,10 @@ export default function Header() {
           <Link href="/events">Events</Link>
           <Link href="/contact">Contact</Link>
           <Link href="/auth/login" className="font-semibold text-light-vibrant-primary">
-            Login/Register
+            Login
+          </Link>
+          <Link href="/auth/register" className="font-semibold text-light-vibrant-primary">
+            Register
           </Link>
         </nav>
 
