@@ -1,0 +1,321 @@
+/* Notifications CSS */
+.notifications-section {
+  margin-bottom: 32px;
+  padding: 24px;
+  background-color: var(--surface);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.notif-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.notif-filters button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--divider);
+  background-color: var(--surface);
+  cursor: pointer;
+}
+
+.notif-filters button.active {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.notif-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notif-item {
+  padding: 12px;
+  border: 1px solid var(--divider);
+  border-radius: 12px;
+  background-color: var(--background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notif-item.read {
+  opacity: 0.6;
+}
+
+.notif-actions button {
+  margin-left: 8px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: white;
+  font-size: 12px;
+}
+
+.empty-msg {
+  text-align: center;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Progress CSS */
+/* progress-overview.css */
+.progress-overview {
+  margin-bottom: 32px;
+  padding: 24px;
+  background-color: var(--surface);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.po-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.po-toggle button {
+  padding: 6px 12px;
+  margin-left: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--divider);
+  background-color: var(--surface);
+  cursor: pointer;
+}
+
+.po-toggle button.active {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.po-chart {
+  height: 200px;
+  background-color: #e5e7eb;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+}
+
+.po-cta {
+  margin-top: 16px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Connected devices CSS */
+
+/* Section */
+.devices-section {
+  padding: 32px;
+  background-color: var(--surface);
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+/* Title */
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+/* Devices Grid */
+.devices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* Device Card */
+.device-card {
+  background-color: var(--background);
+  border: 1px solid var(--divider);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Device Icon */
+.device-icon {
+  font-size: 32px;
+  margin-right: 12px;
+}
+
+/* Device Info */
+.device-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.device-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.device-status {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.device-status.connected {
+  color: green;
+}
+
+.device-status.disconnected {
+  color: red;
+}
+
+/* Device Actions */
+.device-actions .btn-secondary {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--divider);
+  background-color: var(--background);
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.device-actions .btn-secondary:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+/* Connect New Device Button */
+.connect-new {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.connect-new .btn-primary {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.connect-new .btn-primary:hover {
+  background-color: rgba(var(--primary-rgb), 0.9);
+}
+
+/* UserSettungs.CSS */
+
+/* Section */
+.settings-section {
+  padding: 32px;
+  background-color: var(--surface);
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+/* Title */
+.settings-section .section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+/* Settings Item */
+.settings-item {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-label {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+/* Theme Options */
+.theme-options {
+  display: flex;
+  gap: 12px;
+}
+
+.theme-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--divider);
+  background-color: var(--background);
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.theme-btn.active {
+  background-color: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+/* Language Select */
+.settings-select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--divider);
+  background-color: var(--background);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+/* Backup Buttons */
+.backup-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.backup-actions .btn-primary {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.backup-actions .btn-primary:hover {
+  background-color: rgba(var(--primary-rgb), 0.9);
+}
+
+.backup-actions .btn-secondary {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--divider);
+  background-color: var(--background);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.backup-actions .btn-secondary:hover {
+  background-color: rgba(0,0,0,0.05);
+}

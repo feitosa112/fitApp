@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import "../styles/progress-overview.css";
+import "../styles/dashboard.css";
+
 
 export default function ProgressOverview() {
   const [period, setPeriod] = useState<"weekly" | "monthly">("weekly");

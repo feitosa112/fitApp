@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import "../styles/notifications.css";
+import "../styles/dashboard.css";
+
 
 type Notification = {
   id: number;
