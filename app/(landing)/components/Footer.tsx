@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#121212] border-t border-[#2c2c2c] py-8 mt-16">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+    <footer className="footer">
+      <div className="footer-container">
         
         {/* Left – Legal Links */}
-        <div className="flex gap-6 text-sm text-[#9ca3af]">
+        <div className="legal-links">
           <Link href="/privacy">Privacy Policy</Link>
           <Link href="/terms">Terms of Service</Link>
           <Link href="/cookies">Cookies</Link>
@@ -16,13 +16,13 @@ export default function Footer() {
         </div>
 
         {/* Right – Social Icons */}
-        <div className="flex gap-6 text-2xl">
+        <div className="social-icons">
           <a
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="hover:opacity-80"
+            className="social-link"
           >
             📸
           </a>
@@ -31,7 +31,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
-            className="hover:opacity-80"
+            className="social-link"
           >
             ▶️
           </a>
@@ -40,7 +40,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="TikTok"
-            className="hover:opacity-80"
+            className="social-link"
           >
             🎵
           </a>
@@ -48,7 +48,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom copyright */}
-      <div className="text-center text-xs text-[#9ca3af] mt-6">
+      <div className="footer-bottom">
         © {new Date().getFullYear()} DVeb Motion™ – All rights reserved.
       </div>
     </footer>

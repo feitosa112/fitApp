@@ -1,5 +1,11 @@
-// app/layout.tsx
-import "./globals.css"; // globalni CSS, Tailwind ili tvoje varijable
+import "./globals.css"; 
+import "./(landing)/styles/landing.css"
+import "./(landing)/styles/motion-palettes.css";
+import "./(landing)/styles/motion-classic.css";
+import "./(landing)/styles/motion.css";
+import "./(landing)/styles/header.css"
+import "./(landing)/styles/footer.css"
+
 import Header from "./(landing)/components/Header";
 import Footer from "./(landing)/components/Footer";
 
@@ -15,14 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="sr">
-      <body className="bg-[var(--background)] text-[var(--text-primary)]">
-        {/* Header - uvek na vrhu */}
+      <body className="light-vibrant">
         <Header />
-
-        {/* Glavni sadržaj */}
         <main>{children}</main>
-
-        {/* Footer - uvek na dnu */}
         <Footer />
       </body>
     </html>

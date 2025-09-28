@@ -23,51 +23,42 @@ export default function Trust() {
   ];
 
   return (
-    <section className="py-20 bg-[var(--surface)]">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+    <section className="trust-section">
+      <div className="trust-container">
         {/* Testimonials */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-[var(--text-primary)]">
-          💬 Šta kažu naši korisnici
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <h2 className="trust-title">💬 Šta kažu naši korisnici</h2>
+        <div className="testimonials-grid">
           {testimonials.map((t, index) => (
-            <div
-              key={index}
-              className="bg-[var(--background)] border border-[var(--divider)] rounded-2xl shadow-md p-6"
-            >
-              <p className="text-[var(--text-secondary)] italic mb-4">
-                &quot;{t.text}&quot;
-              </p>
-              <h3 className="text-[var(--text-primary)] font-semibold">{t.name}</h3>
+            <div key={index} className="testimonial-card">
+              <p className="testimonial-text">&quot;{t.text}&quot;</p>
+              <h3 className="testimonial-name">{t.name}</h3>
             </div>
           ))}
         </div>
 
         {/* Stats Counter */}
-        <div className="flex justify-center gap-12 mb-16">
-          <div>
-            <p className="text-4xl font-bold text-[var(--primary)]">+25K</p>
-            <p className="text-[var(--text-secondary)]">Aktivnih korisnika</p>
+        <div className="stats-counter">
+          <div className="stat">
+            <p className="stat-number">+25K</p>
+            <p className="stat-label">Aktivnih korisnika</p>
           </div>
-          <div>
-            <p className="text-4xl font-bold text-[var(--primary)]">98%</p>
-            <p className="text-[var(--text-secondary)]">Zadovoljstvo korisnika</p>
+          <div className="stat">
+            <p className="stat-number">98%</p>
+            <p className="stat-label">Zadovoljstvo korisnika</p>
           </div>
-          <div>
-            <p className="text-4xl font-bold text-[var(--primary)]">120+</p>
-            <p className="text-[var(--text-secondary)]">Trenera i mentora</p>
+          <div className="stat">
+            <p className="stat-number">120+</p>
+            <p className="stat-label">Trenera i mentora</p>
           </div>
         </div>
 
         {/* Integrations */}
-        <h3 className="text-2xl font-semibold mb-6 text-[var(--text-primary)]">
-          🔗 Poveži svoje omiljene aplikacije
-        </h3>
-        <div className="flex justify-center gap-12">
+        <h3 className="integrations-title">🔗 Poveži svoje omiljene aplikacije</h3>
+        <div className="integrations-grid">
           {integrations.map((i, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <span className="text-5xl">{i.icon}</span>
-              <p className="text-[var(--text-secondary)] mt-2">{i.name}</p>
+            <div key={index} className="integration-item">
+              <span className="integration-icon">{i.icon}</span>
+              <p className="integration-name">{i.name}</p>
             </div>
           ))}
         </div>

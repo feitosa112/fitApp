@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import "../styles/auth.css";
 
 export default function UserGoals() {
   const goals = [
@@ -21,37 +22,27 @@ export default function UserGoals() {
   };
 
   return (
-    <section className="py-16 bg-[var(--surface)] px-6">
-      <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6 text-[var(--text-primary)]">
-          Select Your Goals
-        </h2>
-        <p className="text-[var(--text-secondary)] mb-8">
-          Choose the goals you want to focus on:
-        </p>
+    <section className="section-bg">
+      <div className="section-container text-center">
+        <h2 className="section-title">Select Your Goals</h2>
+        <p className="section-subtitle">Choose the goals you want to focus on:</p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+        <div className="checkbox-grid">
           {goals.map((goal) => (
-            <div
-              key={goal.id}
-              className="flex items-center gap-3 p-4 border border-[var(--divider)] rounded-lg bg-[var(--background)]"
-            >
+            <div key={goal.id} className="checkbox-card">
               <input
                 type="checkbox"
                 id={goal.id}
                 checked={selectedGoals.includes(goal.id)}
                 onChange={() => handleCheckboxChange(goal.id)}
-                className="w-5 h-5 accent-[var(--primary)]"
+                className="checkbox-input"
               />
-              <label htmlFor={goal.id} className="cursor-pointer text-[var(--text-primary)]">
+              <label htmlFor={goal.id} className="checkbox-label">
                 {goal.label}
               </label>
             </div>
           ))}
         </div>
-
-        {/* samo za debug */}
-        
       </div>
     </section>
   );

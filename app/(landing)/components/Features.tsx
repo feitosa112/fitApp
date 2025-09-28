@@ -25,24 +25,15 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-20 bg-[var(--surface)]">
-      <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-[var(--text-primary)]">
-          🚀 Ključne funkcionalnosti
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <section className="features-section">
+      <div className="features-container">
+        <h2 className="features-title">🚀 Ključne funkcionalnosti</h2>
+        <div className="features-grid">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-[var(--background)] border border-[var(--divider)] rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow"
-            >
-              <div className="text-5xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-2">
-                {feature.title}
-              </h3>
-              <p className="text-[var(--text-secondary)] text-sm">
-                {feature.description}
-              </p>
+            <div key={index} className="feature-card">
+              <div className="feature-icon">{feature.icon}</div>
+              <h3 className="feature-title">{feature.title}</h3>
+              <p className="feature-description">{feature.description}</p>
             </div>
           ))}
         </div>

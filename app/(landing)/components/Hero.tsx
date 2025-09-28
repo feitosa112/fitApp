@@ -1,23 +1,27 @@
-import Cta from "./Cta"
+"use client";
+
+import Cta from "./Cta";
+import "../styles/hero.css"
+
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full">
+    <section className="hero">
       {/* Background slika */}
       <img
-        src="fitness-hero.jpg"  // ime fajla iz public foldera
+        src="/fitness-hero.jpg"
         alt="Fitness Hero Background"
-        className="w-full h-full object-cover"
+        className="hero-bg"
       />
 
       {/* Overlay za kontrast */}
-      <div className="absolute inset-0  bg-opacity-30 flex flex-col justify-center items-center text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-light-vibrant-primary">
+      <div className="hero-overlay">
+        <h1 className="hero-title">
           Your Motion. Your Progress.
         </h1>
-        <p className="text-lg md:text-2xl mb-6 text-light-vibrant-secondary">
+        <p className="hero-subtitle">
           Join DVeb Motion™ and reach your fitness goals faster.
         </p>
-        <Cta/>
+        <Cta />
       </div>
     </section>
   );
