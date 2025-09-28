@@ -1,12 +1,11 @@
 
 
-import Link from 'next/link';
-import Landing from './(landing)/page'
-import {Suspense} from "react";
+
+import { redirect } from 'next/navigation';
+
 
 
 export default function Page() {
-  return (
-    <Landing/>
-  );
+  // Ovo će automatski preusmeriti korisnika na /landing
+  redirect('/landing');
 }
