@@ -30,9 +30,9 @@ export default function Header() {
         </nav>
 
         {/* CTA dugme */}
-        <button className="primary hidden md:inline-block px-6 py-3 bg-[var(--primary)] text-white rounded-md font-semibold hover:opacity-90 transition">
-          Start Training Now
-        </button>
+        <button className="primary px-6 py-3 bg-[var(--primary)] text-white rounded">
+      Start Training Now
+    </button>
 
         {/* Mobile menu icon */}
         <div className="md:hidden flex items-center">
