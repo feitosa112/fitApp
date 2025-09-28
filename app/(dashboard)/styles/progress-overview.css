@@ -1,0 +1,50 @@
+/* progress-overview.css */
+.progress-overview {
+  margin-bottom: 32px;
+  padding: 24px;
+  background-color: var(--surface);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.po-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.po-toggle button {
+  padding: 6px 12px;
+  margin-left: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--divider);
+  background-color: var(--surface);
+  cursor: pointer;
+}
+
+.po-toggle button.active {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.po-chart {
+  height: 200px;
+  background-color: #e5e7eb;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+}
+
+.po-cta {
+  margin-top: 16px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
