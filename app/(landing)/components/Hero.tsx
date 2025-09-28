@@ -2,16 +2,13 @@
 
 import Cta from "./Cta";
 import "../styles/hero.css"
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className="hero">
       {/* Background slika */}
-      <img
-        src="/fitness-hero.jpg"
-        alt="Fitness Hero Background"
-        className="hero-bg"
-      />
+      <Image src="/fitness-hero.jpg" alt="Fitness Hero" width={1920} height={1080} className="object-cover w-full h-full"/>
 
       {/* Overlay za kontrast */}
       <div className="hero-overlay">

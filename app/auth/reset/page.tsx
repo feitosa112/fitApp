@@ -11,7 +11,7 @@ export default function ResetPassword() {
           </h2>
 
           <p className="text-[var(--text-secondary)] mb-6 text-center">
-            Enter your email below and we'll send you instructions to reset your password.
+            Enter your email below and we&apos;ll send you instructions to reset your password.
           </p>
 
           <form className="space-y-4">

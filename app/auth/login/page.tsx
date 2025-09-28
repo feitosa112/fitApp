@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 
 export default function LoginForm() {
@@ -52,7 +53,7 @@ export default function LoginForm() {
             <div className="flex-grow border-t border-[var(--divider)]"></div>
           </div>
 
-          {/* Social logini */}
+          {/* Social logins */}
           <div className="flex flex-col space-y-3">
             <button className="flex items-center justify-center gap-2 border border-[var(--divider)] rounded-lg py-2 hover:bg-gray-100 transition">
               <span>🔍</span> Log in with Google
@@ -66,7 +67,7 @@ export default function LoginForm() {
           </div>
 
           <p className="text-center text-sm text-[var(--text-secondary)] mt-6">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Link href="/auth/register" className="text-[var(--primary)] font-semibold hover:underline">
               Sign up
             </Link>
