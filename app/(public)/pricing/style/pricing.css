@@ -1,0 +1,137 @@
+.pricing {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2.5rem;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 320px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.card-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.6rem;
+}
+
+.card-price span {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-discount {
+  font-size: 0.9rem;
+  color: #008000;
+  margin-bottom: 1rem;
+}
+
+.card-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.card-features li {
+  margin: 0.4rem 0;
+}
+
+.premium {
+  border: 2px solid var(--primary);
+  background: #f8f9ff;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #0056d1;
+}
+
+.btn-secondary {
+  background: #fff;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.comparison {
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.comparison-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.comparison table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.comparison th,
+.comparison td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+}
+
+.comparison th {
+  background: #f0f0f0;
+}
